@@ -94,8 +94,8 @@ where Price <=
     where A.Make = Make)
 ;
 
--- Can we write a query to print the make of a car if 2 or more cars
--- of that make are white?
+-- Can we write a query to print the make of a car if any of the make's cars
+-- are white?
 
 select distinct Make
 from Auto A
@@ -111,6 +111,7 @@ from Auto
 INNER JOIN AutoColor
 on Auto.ID = AutoColor.AutoID
 where AutoColor.Color = 'white';
+
 
 -- What about makes without cars that are white?  It is harder
 -- than flipping "exists" to "not exists"...
@@ -131,3 +132,4 @@ where Make not in
 
 -- We cannot do a simple join to make all the subqueries in the previous 
 -- example go away.
+
