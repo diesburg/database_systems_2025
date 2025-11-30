@@ -1,0 +1,43 @@
+We operate many retail stores across different cities. Each store has an address, and we track which region it belongs to. Our inventory system monitors thousands of products, each with a description and price. When a customer makes a purchase, we record the transaction date, total amount, and payment method. We also save customer details like name and email.
+
+
+Store
+
+Address
+Region
+
+
+
+Product
+
+Description
+Price
+
+
+
+Customer
+
+Name
+Email
+
+
+Purchase / Transaction
+
+Transaction Date
+Total Amount
+Payment Method
+
+-----------------
+
+Relationships
+
+
+Store has Products
+
+
+
+Customer makes Purchases
+
+
+
+Purchase includes Products
